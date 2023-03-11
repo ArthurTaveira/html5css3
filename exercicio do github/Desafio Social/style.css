@@ -1,0 +1,24 @@
+@charset "UTF=8"
+
+* {
+    height: 100%;
+}
+body {
+    background-image: linear-gradient(to right, #818274, #506266, #10454F);
+}
+
+main{
+    background-color: white;
+    margin: auto; /* auto deixa sempre no meio*/
+    padding: 10px;  /*deixa uma sobra no final*/  
+    border-radius: 15px; /* borda redondinha */;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 30px;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+

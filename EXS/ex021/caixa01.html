@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: rgb(135, 135, 228);
+            text-align: center;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid; /*solid, double é duas linha, deshed  e dotted pontilhado, groove é meio que 3D*/
+            border-color: rgb(0, 0, 0);
+
+            border: 10px solid rgb(0, 0, 0); /*shorthand*/
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            padding: 10px 10px 10px; /*shorthand. Ordem de cima, se for tudo a msm medida, pode colocar um só:*/
+            padding: 10px;
+            padding: 10px 10px; /* o primeiro é pra cima e embaixo, e o segundo é pra esquerda e direita*/
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+
+            margin: 10px 10px 20px 10px; /*shorthand*/
+            /*margin: 10px auto 10px auto     -> dessa forma vc deixa automatico as margens da esquerda e direita para deixar no centro*/
+
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blueviolet;
+
+            outline: 5px dashed blueviolet; /*shorthand*/
+
+
+            /*outline é dentro da margem*/
+            /*margin: auto; deixa no meio automatico*/
+
+            /*nessa ordem viu*/
+            
+            /*display: block   --> fica como um bloco
+            display: inline --> fica sendo na linha
+            display : inlin-eblock   --> vai ficar na linha mas vai poder alterar margem e tals*/
+        }
+
+        p {
+            border: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box level</h1>
+    <p>Paragrafos tambem são, mas os<a href="#"> links</a> são exemplos de inline level</p>
+</body>
+</html>

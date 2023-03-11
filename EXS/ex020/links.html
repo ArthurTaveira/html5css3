@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        /*isso foram pseudo classes, ou seja definiem estados de elementos note que so uma ' ":"*/
+
+        
+        .especial {
+            background-color: rgb(216, 122, 122);
+        }
+        
+        .especial::before {
+           content: '✦'; 
+           
+        }
+        
+        a::after {
+            content: '✦';
+            font-weight: normal;
+            text-decoration: none;
+            color: red;
+        }
+
+        /* :: é um pseudoelemento
+        >  = é um children (filho) */
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <a href="https://gustavoguanabara.github.io" >
+            <li class="especial"> Repositorio</li>
+        </a>
+        <a href="https://youtube.com/cursoemvideo/">
+            <li> Youtube</li>
+        </a>
+        <a href="https://www.cursoemvideo.com">
+            <li>Site do curso em video</li>
+        </a>
+    </ul>
+</body>
+</html>
