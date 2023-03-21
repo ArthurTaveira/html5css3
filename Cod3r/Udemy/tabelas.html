@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de Tabelas</title>
+    <style>
+
+        table caption {
+            caption-side: top;
+            text-align: right;
+            font-size: 20px;
+            font-weight: bold;
+
+
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table th {
+            font-size: 20px;
+        }
+
+        table td{
+            font-size: 10px;
+        }
+        table td, table th{
+            border: 3px solid gray;
+            padding: 5px;
+            text-align: left;
+
+        }
+
+        #gabiru {
+            font-size: 15px;
+            color: blue;
+            
+        }
+
+        tfoot {
+            background-color: rgb(59, 59, 59);
+            color: aliceblue;
+        }
+
+        .tablea {
+            width: 500px;
+            overflow-x: auto;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <header>Agora vamos testar tabelas :)</header><br>
+
+    <main>
+        <div class="tabela">
+            <table >
+                <caption>Descrição da tabela é capition</caption>
+                <thead>
+                    <tr>
+                        <th id="gabiru">Titulo 1</th>
+                        <th>Titulo 2</th>
+                        <th>Titulo 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="fileira3">
+                        <td colspan="2" rowspan="2">Aqui</td>
+                        <td>Titulo 3</td>
+                    </tr>
+                    <tr>
+                        <td>Titulo 3</td>
+                    </tr>
+                    <tr>
+                        <td>Titulo 1</td>
+                        <td>Titulo 2</td>
+                        <td>Titulo 3</td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2" rowspan="2"></td>
+            
+                            <td>Total</td>
+                        </tr>
+                    </tfoot>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2" rowspan="2"></td>
+                            <td>preço</td>
+                        </tr>
+                    </tfoot>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+</body>
+</html>
