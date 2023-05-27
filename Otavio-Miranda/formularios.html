@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos</title>
+    <style>
+        label {
+
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Formularioss</h1>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+
+        <fieldset>
+            <legend>descrição</legend>
+            <input type="text" >
+
+        </fieldset>
+
+        <p>O meu Formulário</p>
+        <label for="nome"> Nome: </label>
+        <input type="text" id="nonme" name="nome" placeholder="Digite seu nome"  required     > <br>
+        <!--pode colocar tb disable ou readonly-->
+        <button type="reset">reset</button> <br>
+        <button type="submit">enviar</button>
+        <input type="checkbox" name="sim" id="sim" >
+
+        <p>Qual seu Genero?</p><br>
+
+        <label for="Masculino">Masculino</label><input type="radio" id="Masculino" name="genero"><br><br>
+
+        <label for="Feminino">Feminino</label><input type="radio" id="Feminino" name="genero"><br><br>
+
+        <label for="sla" >sla</label><input type="radio" id="sla" name="genero" checked>
+
+
+        <p>
+            <label for="date">Data: </label>
+            <input type="date" id="date" name="date" value="2004-12-16">
+        </p>
+
+
+        <p>
+            <label for="datetime"> Hora e data: </label>
+            <input type="datetime-local" id="datetime" name="datetime" value="2004-12-16T12:02">
+        </p>
+
+        <p>
+            <label for="time"> Hora: </label>
+            <input type="time" id="time" name="time" value="12:02:10">
+        </p>
+
+        <p>
+            <label for="cor">Cor preferida? </label>
+            <input type="color" id="cor" name="cor" value="#000000" >
+        </p>
+
+        <p>
+            <label for="email">Coloque seu email </label>
+            <input type="email" id="email" name="email" value="" placeholder="Seu email aqui">
+        </p>
+
+        <p>
+            <label for="file">Seu Arquivo </label>
+            <input type="file" id="file" name="file" value="file" accept=".png, .svg, .pdf, imagem/*" multiple>
+        </p>
+
+        <p>
+            <label for="number"> Fale um Número: </label>
+            <input type="number" id="number" name="number" value="" min="10" max="50" step="10">
+        </p>
+
+        <p>
+            <label for="pass">Sua senha</label>
+            <input type="password" id="pass" name="pass" value="" placeholder="*******">
+        </p>
+
+        <p>
+            <label for="range">Volume </label>
+            <input type="range" id="range" name="range" min="0" max="20" list="lista">
+        </p>
+
+        <datalist id="lista">
+            <option value="0"></option> <label for="0%"></label>
+            <option value="5"></option>
+            <option value="10"></option> <label for="10%"></label>
+            <option value="15"></option>
+            <option value="20"></option>
+        </datalist>
+
+        <p>
+            <label for="url">sua URL</label>
+            <input type="url" id="url" name="url" value="" placeholder="sua url">
+        </p>
+
+        <p>
+            <label for="search">sua URL</label>
+            <input type="search" id="search" name="search" value="" placeholder="search">
+        </p>
+
+        <label for="select">Selecione Algo</label>
+        <select name="select" id="slsect">
+            <optgroup label="teste 1">
+            <option value="qualquer">valor</option>
+            <option value="qualquer1" disabled>valor1</option>
+            <option value="qualquer2" selected>valor2</option>
+        </optgroup>
+        </select>
+        <label for="textarea">text:area</label>
+        <textarea name="textarea" id="textarea" cols="20" rows="5"></textarea>
+        
+
+        
+
+
+
+
+
+    </form>
+</body>
+</html>
